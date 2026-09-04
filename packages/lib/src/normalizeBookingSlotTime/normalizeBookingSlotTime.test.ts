@@ -1,0 +1,2 @@
+import { normalizeBookingSlotTime } from './normalizeBookingSlotTime'; import assert from 'node:assert/strict';
+const d = new Date("2026-06-01T10:07:00Z"); assert.equal(normalizeBookingSlotTime(d, 15).toISOString(), "2026-06-01T10:00:00.000Z");
