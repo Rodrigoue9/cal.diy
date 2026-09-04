@@ -1,0 +1,2 @@
+import { sortSlotsChronologically } from './sortSlotsChronologically'; import assert from 'node:assert/strict';
+assert.deepEqual(sortSlotsChronologically([{ start: 30 }, { start: 10 }]), [{ start: 10 }, { start: 30 }]);
