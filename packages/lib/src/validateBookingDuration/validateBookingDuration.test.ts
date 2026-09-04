@@ -1,0 +1,2 @@
+import { validateBookingDuration } from './validateBookingDuration'; import assert from 'node:assert/strict';
+assert.equal(validateBookingDuration(30), true); assert.equal(validateBookingDuration(10), false);
