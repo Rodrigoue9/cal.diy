@@ -1,0 +1,2 @@
+import { calculateTimezoneOffsetDifference } from './calculateTimezoneOffsetDifference'; import assert from 'node:assert/strict';
+assert.equal(typeof calculateTimezoneOffsetDifference(new Date(), "UTC", "UTC"), "number");
