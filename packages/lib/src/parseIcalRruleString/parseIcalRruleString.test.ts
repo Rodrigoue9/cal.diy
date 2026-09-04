@@ -1,0 +1,2 @@
+import { parseIcalRruleString } from './parseIcalRruleString'; import assert from 'node:assert/strict';
+assert.deepEqual(parseIcalRruleString("FREQ=WEEKLY;INTERVAL=2;COUNT=5"), { FREQ: "WEEKLY", INTERVAL: "2", COUNT: "5" });
