@@ -1,0 +1,2 @@
+import { parseDurationStringToMinutes } from './parseDurationStringToMinutes'; import assert from 'node:assert/strict';
+assert.equal(parseDurationStringToMinutes("1h 15m"), 75); assert.equal(parseDurationStringToMinutes("45m"), 45);
