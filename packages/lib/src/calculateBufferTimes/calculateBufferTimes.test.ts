@@ -1,0 +1,2 @@
+import { calculateBufferTimes } from './calculateBufferTimes'; import assert from 'node:assert/strict';
+assert.deepEqual(calculateBufferTimes(1000000, 2000000, 5, 5), { bufferStart: 700000, bufferEnd: 2300000 });
