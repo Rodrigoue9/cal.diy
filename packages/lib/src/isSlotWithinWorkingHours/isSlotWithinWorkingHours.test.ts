@@ -1,0 +1,2 @@
+import { isSlotWithinWorkingHours } from './isSlotWithinWorkingHours'; import assert from 'node:assert/strict';
+assert.equal(isSlotWithinWorkingHours(600, 630), true); assert.equal(isSlotWithinWorkingHours(500, 600), false);
