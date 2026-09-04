@@ -1,0 +1,2 @@
+import { mergeAvailabilityIntervals } from './mergeAvailabilityIntervals'; import assert from 'node:assert/strict';
+assert.deepEqual(mergeAvailabilityIntervals([[1, 3], [2, 6], [8, 10]]), [[1, 6], [8, 10]]);
