@@ -1,0 +1,2 @@
+import { detectTimezoneFromOffset } from './detectTimezoneFromOffset'; import assert from 'node:assert/strict';
+assert.equal(detectTimezoneFromOffset(0), "UTC"); assert.equal(detectTimezoneFromOffset(-300), "America/New_York");
