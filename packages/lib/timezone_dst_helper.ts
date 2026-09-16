@@ -3,6 +3,10 @@
  *
  * The sign applies to the complete hours-and-minutes value. This matters for
  * fractional negative offsets such as GMT-03:30, which must be -210 minutes.
+ *
+ * @param tz - The IANA timezone identifier string.
+ * @param date - The date to calculate offset for (defaults to current date).
+ * @returns The signed UTC offset in minutes.
  */
 export function getTimezoneOffsetMinutes(tz: string, date = new Date()): number {
   const value = date.toLocaleString("en-US", {
